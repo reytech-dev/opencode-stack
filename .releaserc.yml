@@ -54,12 +54,9 @@ plugins:
 
   - - "@semantic-release/exec"
     - prepareCmd: |
-        docker build -t ghcr.io/reytech-dev/dispute-hub/backend:"v${nextRelease.version}" -t ghcr.io/reytech-dev/dispute-hub/backend:latest ./backend
-        docker build -t ghcr.io/reytech-dev/dispute-hub/frontend:"v${nextRelease.version}" -t ghcr.io/reytech-dev/dispute-hub/frontend:latest ./frontend
-        docker push ghcr.io/reytech-dev/dispute-hub/backend:"v${nextRelease.version}"
-        docker push ghcr.io/reytech-dev/dispute-hub/backend:latest
-        docker push ghcr.io/reytech-dev/dispute-hub/frontend:"v${nextRelease.version}"
-        docker push ghcr.io/reytech-dev/dispute-hub/frontend:latest
+        docker build -t ghcr.io/reytech-dev/opencode-stack/opencode-stack:"v${nextRelease.version}" -t ghcr.io/reytech-dev/opencode-stack/opencode-stack:latest .
+        docker push ghcr.io/reytech-dev/opencode-stack/opencode-stack:"v${nextRelease.version}"
+        docker push ghcr.io/reytech-dev/opencode-stack/opencode-stack:latest
 
   - - "@semantic-release/git"
     - assets:
