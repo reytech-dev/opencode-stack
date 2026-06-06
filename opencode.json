@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "deepseek": {
+      "models": {},
+      "options": {
+        "apiKey": "{env:DEEPSEEK_API_KEY}"
+      }
+    }
+  }
+}

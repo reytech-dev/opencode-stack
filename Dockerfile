@@ -8,6 +8,7 @@ ENV NPM_CONFIG_CACHE="${HOME}/.npm-cache"
 ENV PATH="${HOME}/.npm-global/bin:/app/.npm-global/lib/node_modules/opencode-linux-x64-baseline-musl/bin:${PATH}"
 ENV OPENCODE_VERSION="${OPENCODE_VERSION}"
 
-RUN mkdir -p "${HOME}/.npm-global" "${HOME}/.npm-cache"
+COPY opencode.json /app/.config/opencode/opencode.jsonc
 
-RUN npm install -g "opencode-linux-x64-baseline-musl@${OPENCODE_VERSION}"
+RUN mkdir -p "${HOME}/.npm-global" "${HOME}/.npm-cache" && \
+    npm install -g "opencode-linux-x64-baseline-musl@${OPENCODE_VERSION}"
