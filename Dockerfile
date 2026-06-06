@@ -1,0 +1,13 @@
+FROM docker.io/vanjayak/open-design:latest
+
+ARG OPENCODE_VERSION=1.16.2
+
+ENV HOME="/app"
+ENV NPM_CONFIG_PREFIX="${HOME}/.npm-global"
+ENV NPM_CONFIG_CACHE="${HOME}/.npm-cache"
+ENV PATH="${HOME}/.npm-global/bin:/app/.npm-global/lib/node_modules/opencode-linux-x64-baseline-musl/bin:${PATH}"
+ENV OPENCODE_VERSION="${OPENCODE_VERSION}"
+
+RUN mkdir -p "${HOME}/.npm-global" "${HOME}/.npm-cache"
+
+RUN npm install -g "opencode-linux-x64-baseline-musl@${OPENCODE_VERSION}"
