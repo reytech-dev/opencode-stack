@@ -1,6 +1,6 @@
 FROM docker.io/vanjayak/open-design:latest
 
-ARG OPENCODE_VERSION=1.16.2
+ARG OPENCODE_VERSION=1.17.13
 
 ENV HOME="/app"
 ENV NPM_CONFIG_PREFIX="${HOME}/.npm-global"
