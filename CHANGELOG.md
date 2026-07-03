@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/reytech-dev/opencode-stack/compare/v1.1.0...v1.2.0) (2026-07-03)
+
+### Features
+
+* **opencode:** update opencode to 1.17.13 ([9b03395](https://github.com/reytech-dev/opencode-stack/commit/9b03395a98118fcee490ac3c33a3686ae6f7c2e0))
+
 ## [1.1.0](https://github.com/reytech-dev/opencode-stack/compare/v1.0.0...v1.1.0) (2026-06-06)
 
 ### Features
